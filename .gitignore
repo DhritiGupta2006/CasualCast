@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Pipeline-generated artifacts (run.sh writes these fresh every run)
+output/*.csv
+!output/.gitkeep
+
+# Backend secrets
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS/editor cruft
+.DS_Store

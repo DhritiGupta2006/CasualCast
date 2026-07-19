@@ -1,0 +1,13 @@
+# Backend + LLM-only dependencies for the live demo (backend/ + eventually
+# backend/llm/ in Phase 6). Installed SEPARATELY from the root
+# requirements.txt -- the organizers' scored-pipeline `pip install -r
+# requirements.txt` must never see fastapi, uvicorn, or an LLM SDK.
+#
+# Install with:
+#   pip install -r backend/requirements-backend.txt
+
+fastapi==0.139.2
+uvicorn==0.51.0
+python-multipart==0.0.32
+python-dotenv==1.1.1
+anthropic==0.117.0

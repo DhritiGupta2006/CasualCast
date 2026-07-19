@@ -1,0 +1,19 @@
+# Streamlit demo-only dependencies. Installed SEPARATELY from the root
+# requirements.txt (the scored batch pipeline's `pip install -r
+# requirements.txt` must never see streamlit) and separately from
+# backend/requirements-backend.txt (this app doesn't run FastAPI).
+#
+# Install with:
+#   pip install -r streamlit_app/requirements-streamlit.txt
+#
+# core/'s own deps (pandas, numpy) come from the root requirements.txt —
+# install that first, or just install both together:
+#   pip install -r requirements.txt -r streamlit_app/requirements-streamlit.txt
+#
+# python-dotenv + anthropic are optional, only needed if you tick "Narrate
+# with LLM" in the sidebar; the app works fully without them (template
+# narration is the default).
+
+streamlit==1.59.2
+python-dotenv==1.1.1
+anthropic==0.117.0
